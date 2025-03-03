@@ -2,6 +2,12 @@ import duckdb as dd
 from deltalake import write_deltalake
 import logging
 
+#  * Olist Data Project
+#  *
+#  * This source code is licensed under the MIT license found in the
+#  * LICENSE file in the root directory of this source tree.
+#  * This code was developed by Gabriel Nunes.
+
 # Configuração de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
