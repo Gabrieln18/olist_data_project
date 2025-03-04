@@ -5,6 +5,8 @@ __pycache__/
 
 # directories
 RAW
+SILVER
+GOLD
 
 # C extensions
 *.so
