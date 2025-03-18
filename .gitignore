@@ -7,6 +7,8 @@ __pycache__/
 RAW
 SILVER
 GOLD
+logs
+
 
 # C extensions
 *.so
