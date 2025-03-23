@@ -7,7 +7,7 @@ __pycache__/
 RAW
 SILVER
 GOLD
-logs
+delta_lake
 
 
 # C extensions
