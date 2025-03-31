@@ -1,2 +1,8 @@
 duckdb
 deltalake
+pandas
+matplotlib
+jupyterlab
+dash
+plotly
+streamlit
