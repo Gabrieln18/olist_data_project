@@ -163,7 +163,7 @@ if __name__ == "__main__":
                 COALESCE(LOWER(TRIM(review_comment_message)), 'sem comentário') AS review_comment_message, -- Substitui NULL por 'sem comentário'
                 COALESCE(CAST(review_creation_date AS TIMESTAMP), CURRENT_TIMESTAMP) AS review_creation_date, -- Se NULL, usa data atual
                 COALESCE(CAST(review_answer_timestamp AS TIMESTAMP), CURRENT_TIMESTAMP) AS review_answer_timestamp -- Se NULL, usa data atual
-            FROM delta_scan('../delta_lake/bronze/order_reviews')
+            FROM delta_scan('../delta_lake/bronze/reviews_bronze')
     """, table_name="order_reviews")
 
     # orders table - transformar e retornar delta table com apenas os PEDIDOS ENTREGUES
