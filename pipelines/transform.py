@@ -7,10 +7,10 @@ from deltalake import write_deltalake
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-def transform_pipeline_sql(query: str, table_name: str, mode: str = "overwrite"):
+def transform_pipeline_sql(query: str, table_name: str, mode: str = "overwrite", silver_path_out: str = "../delta_lake/silver/"):
     """Executa uma query SQL sobre um Delta Table e salva o resultado na camada Silver."""
     
-    silver_path = "../delta_lake/silver/"
+    silver_path = silver_path_out
     silver_path_delta = f"{silver_path}{table_name}"
     os.makedirs(silver_path, exist_ok=True) # cria o diretório se não existir
 
