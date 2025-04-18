@@ -42,20 +42,3 @@ def extract_func_sqlite(db_path: str, sqlite_table: str, bronze_delta_path: str,
 
     finally:
         conn.close()
-
-if __name__ == "__main__":
-
-    # extração de dados .csv para camada bronze
-    extract_func_csv(source_path_csv="../data/olist_customers_dataset.csv", name_table="customers_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/olist_geolocation_dataset.csv", name_table="geolocation_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/olist_order_items_dataset.csv", name_table="order_items_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/olist_order_payments_dataset.csv", name_table="payments_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/olist_order_reviews_dataset.csv", name_table="reviews_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/olist_orders_dataset.csv", name_table="orders_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/olist_products_dataset.csv", name_table="products_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/olist_sellers_dataset.csv", name_table="sellers_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_csv(source_path_csv="../data/product_category_name_translation.csv", name_table="product_category_name_translation_bronze", bronze_delta_path="../delta_lake/bronze")
-
-    # extração de dados sqlite, tabelas: leads_closed e leads_qualified
-    extract_func_sqlite(db_path="../data/olist.sqlite", sqlite_table="leads_qualified", name_table="leads_qualified_bronze", bronze_delta_path="../delta_lake/bronze")
-    extract_func_sqlite(db_path="../data/olist.sqlite", sqlite_table="leads_closed", name_table="leads_closed_bronze", bronze_delta_path="../delta_lake/bronze")
