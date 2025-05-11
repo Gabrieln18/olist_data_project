@@ -6,3 +6,4 @@ jupyterlab
 dash
 plotly
 streamlit
+agno
