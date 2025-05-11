@@ -48,17 +48,3 @@ def query_sql(query: str, database: str = ":memory:"):
     conn.close()    
 
 create_database_persistant(duckdb_dir="/media/gabriel/HD_Storage/Engenharia_de_Dados/olist_data_project/data/gold_database.db", file_path="/media/gabriel/HD_Storage/Engenharia_de_Dados/olist_data_project/delta_lake/gold")
-# if __name__ == "__main__":
-#     # Caminhos de exemplo
-#     db_path = "/media/gabriel/HD_Storage/Engenharia_de_Dados/olist_data_project/data/gold_database.db"
-#     delta_path = "/media/gabriel/HD_Storage/Engenharia_de_Dados/olist_data_project/delta_lake/gold"
-    
-#     # Cria o banco de dados
-#     connection = create_database_persistant(db_path, delta_path)
-    
-#     # Exemplo de consulta
-#     result = connection.execute("SELECT * FROM sales_by_category LIMIT 10").fetchall()
-#     print(result)
-    
-#     # Fechar a conexão quando terminar
-#     connection.close()
