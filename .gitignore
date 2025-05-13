@@ -9,6 +9,7 @@ SILVER
 GOLD
 delta_lake
 tests
+tmp
 
 
 # C extensions

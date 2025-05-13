@@ -7,3 +7,5 @@ dash
 plotly
 streamlit
 agno
+groq
+openai
