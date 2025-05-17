@@ -30,18 +30,12 @@ The focus of this project is to apply fundamental concepts of data engineering a
 ## BI Dashboard
 The dashboard for this project was built using the Python libraries: Streamlit and Plotly. Moreover, this Data App features a native AI Agent to assist users with decision-making and data exploration beyond the static visualization of Streamlit, allowing for understanding and answering complex and strategic questions based on the data.
 
-<video autoplay loop muted playsinline>
-  <source src="./assets/video/dashboard_olist_data_project_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Dashboard BI demo](./assets/static/dashboard_olist_data_project_demo.gif)
 
 ### CoPilot Business Agent
 The dashboard's native AI Agent is called the Copilot Business Agent. It functions as a tool for exploration, analysis, and guidance based on the data present in the dashboard.
 
-<video autoplay loop muted playsinline>
-  <source src="./assets/video/copilot_business_agent_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![CoPilot Business Agent demo](./assets/static/copilot_business_agent_demo.gif)
 
 ## BI Report
 Here is a summary of the BI report with insights, business opportunities, and recommended actions revealed in this project:
